@@ -421,6 +421,10 @@ main {
     width: 30%;
 }
 
+#chain img {
+    width: 100%;
+}
+
 #wallet1 {
     width: 50%;
     height: 50%;
