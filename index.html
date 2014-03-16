@@ -1,28 +1,133 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-<meta charset="UTF-8">
-<link rel=StyleSheet href="css.css" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.chainexplorer.info/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 1]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-
-</script>
-<noscript><p><img src="http://analytics.chainexplorer.info/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Chain Explorer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script>
+        $(document).ready(
+            function() { 
+                $("html").niceScroll();
+            }
+        );
+    </script>
+    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    <style type="text/css">
+    body {
+        font-family: 'Open Sans', sans-serif;
+    </style>
 </head>
-	<body>
-		<!--<h1>MystPhysX's Domain</h1>-->
-		<a href="http://chainexplorer.info:2750/chain/Fedoracoin" class="button">FedoraCoin Chain</a>
-	</body>
+<body class="loading">
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="preload">
+        <img src="img/bcg_slide-1.jpg">
+        <img src="img/bcg_slide-2.jpg">
+        <img src="img/bcg_slide-3.jpg">
+        <img src="img/bcg_slide-4.jpg">
+    </div>
+    <main>
+        <section id="slide-1" class="homeSlide">
+            <div class="bcg"
+                data-center="background-position: 50% 0px;" 
+                data-top-bottom="background-position: 50% -100px;" 
+                data-anchor-target="#slide-1">
+                <div class="hsContainer">
+                    <div class="hsContent"
+                        data-center="bottom: 200px; opacity: 1"
+                        data-top="bottom: 1200px; opacity: 0"
+                        data-anchor-target="#slide-1 h1">
+                        <h1>Welcome!</h1>
+                        <p>This site serves as a frontend for all my crypto-related projects.</p>
+                        <p>It was primarily designed for blockexplorers but will also host my OSX wallet builds and the Miner-Cache.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="slide-2" class="homeSlide">
+            <div class="bcg" 
+                data-center="background-position: 50% 10px;" 
+                data-top-bottom="background-position: 50% -100px;" 
+                data-bottom-top="background-position: 50% 100px;" 
+                data-anchor-target="#slide-2">
+                <div class="hsContainer">
+                    <div class="hsContent" 
+                        data-center="opacity: 1" 
+                        data-center-top="opacity: 0" 
+                        data--100-bottom="opacity: 0;" 
+                        data-anchor-target="#slide-2">
+                        <h1>Block Chain Explorers</h1>
+                        <div id="test">
+                            <div id="chain">
+                                <a href="http://chainexplorer.info:2750/chain/Fedoracoin" id="centerer">
+                                    <img src="./img/tipschain.png" id="centered">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="slide-3" class="homeSlide">
+            <div class="bcg" 
+                data-center="background-position: 50% 0px;" 
+                data-top-bottom="background-position: 50% -100px;" 
+                data-bottom-top="background-position: 50% 100px;" 
+                data-anchor-target="#slide-3">
+                <div class="hsContainer">
+                    <div class="hsContent" 
+                        data-center="opacity: 1" 
+                        data-center-top="opacity: 0" 
+                        data--100-bottom="opacity: 0;" 
+                        data-anchor-target="#slide-3">
+                        <h1>OSX Wallets</h1>
+                        <div id="test">
+                            <div id="wallet1">
+                                <a href="#" id="centerer">
+                                    <img src="./img/tips.png" id="centered">
+                                </a>
+                            </div>
+                            <div id="wallet2">
+                                <a href="#" id="centerer">
+                                    <img src="./img/mint.png" id="centered">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="slide-4" class="homeSlide">
+            <div class="bcg" 
+                data-center="background-position: 50% 0px;" 
+                data-top-bottom="background-position: 50% -100px;" 
+                data-bottom-top="background-position: 50% 100px;" 
+                data-anchor-target="#slide-4">
+                <div class="hsContainer">
+                    <div class="hsContent" 
+                        data-bottom-top="opacity: 0" 
+                        data-25p-top="opacity: 0" 
+                        data-top="opacity: 1"  
+                        data-anchor-target="#slide-4">
+                        <h1>Coming Soon.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/_main.min.js"></script>
+</body>
 </html>
