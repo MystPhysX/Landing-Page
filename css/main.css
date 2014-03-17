@@ -425,16 +425,6 @@ main {
     width: 100%;
 }
 
-#wallet1 {
-    width: 50%;
-    height: 50%;
-}
-
-#wallet2 {
-    width: 50%;
-    height: 50%;
-}
-
 #test {
     display: -webkit-box;   
     display: -moz-box; 
@@ -462,4 +452,5 @@ main {
 #centered {
     display: inline-block;
     vertical-align: middle;
+    width: 70%;
 }
