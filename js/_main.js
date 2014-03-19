@@ -1,10 +1,9 @@
-( function( $ ) {
-	
+(function ($) {
 	// Setup variables
 	$window = $(window);
 	$slide = $('.homeSlide');
 	$body = $('body');
-	
+
     //FadeIn all sections   
 	$body.imagesLoaded( function() {
 		setTimeout(function() {
@@ -40,5 +39,5 @@
 	    s.refresh($('.homeSlide'));
 	    
 	}
-		
+        
 } )( jQuery );
