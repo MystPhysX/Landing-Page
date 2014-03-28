@@ -442,6 +442,11 @@ main {
     text-align: center;
 }
 
+#test h2 {
+    width: 27%;
+    background: none; !important
+}
+
 #centerer {
     display: inline-block;
     height: 100%;
