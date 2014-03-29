@@ -1,88 +1,90 @@
 body, html {
-	height: 100%;
-	min-height: 100%;
-	background-color: #6bcffd;
+    height: 100%;
+    min-height: 100%;
+    background-color: #6bcffd;
 }
 
 body {
 	
 }
 
-.no-js {
-	padding-top: 106px;
-}
-
 h2 {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 .loading {
-	background: url('../img/ico_loading.gif') no-repeat center center;
+    background: url('../img/ico_loading.gif') no-repeat center center;
 }
 
 section {
-	min-width: 960px;
-	opacity: 0;
+    min-width: 960px;
+    opacity: 0;
 }
 
 .loaded section,
 .no-js section {
-	opacity: 1;
-	-webkit-transition: opacity 300ms ease-out;
-	-moz-transition: opacity 300ms ease-out;
-	transition: opacity 300ms ease-out;
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
 }
 
 main {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 #preload {
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .bcg {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .hsContainer {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .hsContent {
 }
 
-.hsContent h1  {
+h1  {
     color: #fff8de;
     font-size: 5em;
     text-align: center;
+    margin-top: 1em;
 }
 
-.hsContent p {
+p {
     color: #b2b2b2;
     text-align: center;
 }
 
-.hsContent a {
-    color: #b2b2b2;
-    text-decoration: underline;
+#slide-1 .bcg {
+    background-image:url('../img/bcg_slide-1.jpg');
 }
 
-#slide-1 .bcg {
-    background-image:url('../img/bcg_slide-1.jpg')
+#mobile-1 {
+    background-image:url('../img/bcg_slide-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #slide-1 .hsContent {	
@@ -95,14 +97,34 @@ main {
 }
 
 #slide-2 .bcg {
-    background-image:url('../img/bcg_slide-2.jpg')
+    background-image:url('../img/bcg_slide-2.jpg');
+}
+
+#mobile-2 {
+    background-image:url('../img/bcg_slide-2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #slide-2 .hsContent {
 }
 
 #slide-3 .bcg {
-    background-image:url('../img/bcg_slide-3.jpg')
+    background-image:url('../img/bcg_slide-3.jpg');
+}
+
+#mobile-3 {
+    background-image:url('../img/bcg_slide-3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #slide-3 .hsContent {
@@ -114,7 +136,17 @@ main {
 }
 
 #slide-4 .bcg {
-    background-image:url('../img/bcg_slide-4.jpg')
+    background-image:url('../img/bcg_slide-4.jpg');
+}
+
+#mobile-4 {
+    background-image:url('../img/bcg_slide-4.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #slide-4 .hsContent {
@@ -224,4 +256,24 @@ nav li:first-child {
     #centered {
         width: 40%;
     }
+}
+
+.vertical {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.vertical-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -wekbit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
