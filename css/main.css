@@ -208,7 +208,7 @@ nav li:first-child {
     text-decoration: overline;
 }
 
-@media all and (max-height: 901px) and (min-height: 699px) {
+@media all and (max-height: 901px) and (min-height: 600px) {
     #centered {
         width: 40%;
     }
