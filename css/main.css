@@ -200,7 +200,7 @@ p {
     background: none; !important
 }
 
-#centerer {
+#centerer,#centerer-chain {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
@@ -252,7 +252,18 @@ nav li:first-child {
 
 @media all and (max-height: 901px) and (min-height: 600px) {
     #centered {
-        width: 40%;
+        width: 60%;
+    }
+    
+    #centerer {
+    display: inline-block;
+    width: 30%;
+    }
+}
+
+@media all and (max-height: 1079px) and (min-height: 901px) {
+    #centered {
+        width: 70%;
     }
 }
 
@@ -264,7 +275,7 @@ nav li:first-child {
 
 @media all and (max-height: 2161px) and (min-height: 1801px) {
     #centered {
-        width: 40%;
+        width: 140%;
     }
 }
 
