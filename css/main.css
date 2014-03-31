@@ -209,7 +209,7 @@ p {
 #centered {
     display: inline-block;
     vertical-align: middle;
-    width: 60%;
+    width: 50%;
 }
 
 nav {
@@ -252,7 +252,7 @@ nav li:first-child {
 
 @media all and (max-height: 901px) and (min-height: 550px) {
     #centered {
-        width: 40%;
+        width: 35%;
     }
     
     #centerer {
